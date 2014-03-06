@@ -10,4 +10,9 @@
 
 @interface MyScene : SKScene
 
+@property (nonatomic, strong) NSMutableArray *sequence;
+@property (nonatomic) BOOL userTurn;
+@property (nonatomic) int userSeqStep;
+@property (nonatomic) BOOL gameOver;
+
 @end

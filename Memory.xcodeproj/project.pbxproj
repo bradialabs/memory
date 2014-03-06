@@ -25,6 +25,7 @@
 		9345178518B1D27500651B8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9345175D18B1D27500651B8D /* UIKit.framework */; };
 		9345178D18B1D27500651B8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9345178B18B1D27500651B8D /* InfoPlist.strings */; };
 		9345178F18B1D27500651B8D /* MemoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9345178E18B1D27500651B8D /* MemoryTests.m */; };
+		9345179A18B1D52200651B8D /* MemCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9345179918B1D52200651B8D /* MemCircle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		9345178A18B1D27500651B8D /* MemoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemoryTests-Info.plist"; sourceTree = "<group>"; };
 		9345178C18B1D27500651B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9345178E18B1D27500651B8D /* MemoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryTests.m; sourceTree = "<group>"; };
+		9345179818B1D52200651B8D /* MemCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemCircle.h; sourceTree = "<group>"; };
+		9345179918B1D52200651B8D /* MemCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemCircle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				9345177418B1D27500651B8D /* ViewController.m */,
 				9345177618B1D27500651B8D /* MyScene.h */,
 				9345177718B1D27500651B8D /* MyScene.m */,
+				9345179818B1D52200651B8D /* MemCircle.h */,
+				9345179918B1D52200651B8D /* MemCircle.m */,
 				9345177918B1D27500651B8D /* Spaceship.png */,
 				9345177B18B1D27500651B8D /* Images.xcassets */,
 				9345176218B1D27500651B8D /* Supporting Files */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9345179A18B1D52200651B8D /* MemCircle.m in Sources */,
 				9345177818B1D27500651B8D /* MyScene.m in Sources */,
 				9345177518B1D27500651B8D /* ViewController.m in Sources */,
 				9345176C18B1D27500651B8D /* AppDelegate.m in Sources */,
@@ -406,9 +412,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Memory/Memory-Prefix.pch";
 				INFOPLIST_FILE = "Memory/Memory-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CODE_SIGN_FLAGS = "-gta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -420,9 +429,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Memory/Memory-Prefix.pch";
 				INFOPLIST_FILE = "Memory/Memory-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CODE_SIGN_FLAGS = "-gta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -490,6 +502,7 @@
 				9345179418B1D27500651B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9345179518B1D27500651B8D /* Build configuration list for PBXNativeTarget "MemoryTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +511,7 @@
 				9345179718B1D27500651B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
